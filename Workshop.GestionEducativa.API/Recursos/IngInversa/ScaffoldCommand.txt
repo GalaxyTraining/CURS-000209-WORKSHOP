@@ -1,0 +1,1 @@
+﻿Scaffold-DbContext "Host=localhost:5432;Database=bdGestionEducativa;Username=usuario_admin;Password=password2024;" Npgsql.EntityFrameworkCore.PostgreSQL -OutputDir ../Workshop.GestionEducativa.Entidades -Context GestionDbContext -ContextDir Contextos -Project Workshop.GestionEducativa.AccesoDatos -StartupProject Workshop.GestionEducativa.AccesoDatos -Force

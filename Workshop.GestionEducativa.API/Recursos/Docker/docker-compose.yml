@@ -1,0 +1,14 @@
+﻿version: '3.8'
+services:
+  postgres-db:
+    image: postgres:latest
+    restart: always
+    container_name: postgre_container
+    environment:
+        POSTGRES_DB: bdGestionEducativa
+        POSTGRES_USER: usuario_admin
+        POSTGRES_PASSWORD: password2024
+    volumes:
+        - ./postgres_data:/var/lib/postgresql/data
+    ports:
+    - "5432:5432"

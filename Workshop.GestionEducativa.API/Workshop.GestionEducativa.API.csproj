@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Recursos\Docker\postgres_data\**" />
+    <Content Remove="Recursos\Docker\postgres_data\**" />
+    <EmbeddedResource Remove="Recursos\Docker\postgres_data\**" />
+    <None Remove="Recursos\Docker\postgres_data\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Workshop.GestionEducativa.AccesoDatos\Workshop.GestionEducativa.AccesoDatos.csproj" />
+    <ProjectReference Include="..\Workshop.GestionEducativa.Repositorios\Workshop.GestionEducativa.Repositorios.csproj" />
+    <ProjectReference Include="..\Workshop.GestionEducativa.Servicios\Workshop.GestionEducativa.Servicios.csproj" />
+  </ItemGroup>
+
+</Project>
